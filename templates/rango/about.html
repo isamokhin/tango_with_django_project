@@ -1,17 +1,14 @@
-<!DOCTYPE html>
+{% extends 'rango/base.html' %}
+{% load static %}
 
-{% load static %} <!-- New line -->
-
-<html>
-
-    <head>
-        <title>Rango</title>
-    </head>
-
+    {% block title %}About Rango{% endblock %}
+    {% block body_block %}
     <body>
+        <div class="hero-unit">
         <h1>Rango says:</h1>
         Here is the about page! Or you can return back to <a href='/rango/'>index page</a>
         <img src="{% static 'profile.jpg' %}" alt="Here is my picture" />
+        <br>Currently, you visited this site {{visits}} times</br>
+        </div>
     </body>
-
-</html>
+    {% endblock %}

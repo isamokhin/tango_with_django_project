@@ -13,6 +13,7 @@ STATIC_PATH = os.path.join(PROJECT_PATH,'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(PROJECT_PATH, 'media') # Absolute path to the media directory
 DATABASE_PATH = os.path.join(PROJECT_PATH, 'rango.db')
+LOGIN_URL = '/rango/login/'
 
 
 ADMINS = (
